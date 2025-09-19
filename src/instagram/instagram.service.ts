@@ -11,6 +11,7 @@ export class InstagramService {
         const posts = results.posts;
         return posts;
       } else {
+        console.log(results)
         throw new Error('Failed to scrape Instagram');
       }
     } catch (err) {
